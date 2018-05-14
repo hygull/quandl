@@ -175,3 +175,24 @@ print data;
 `python main_data_filtered_request_5_rows.py`
 
 Click [time-series-Filtered-Request-5-Columns.txt](../docs/output/time-series-Filtered-Request-5-Columns.txt) to see the output of above command.
+
+## Preprocessing data: Changing sampling frequency
+
+```python
+import quandl 
+import conf
+
+# Setting Quandl's API KEY (Use your own API KEY)
+quandl.ApiConfig.api_key = conf.API_KEY
+
+# Preprocessing data, Changing sampling frequency
+# Quandl code: EIA/PET_RWTC_D
+data = quandl.get("EIA/PET_RWTC_D", collapse="monthly")
+print data; 
+```
+
+## Run code (main_data_preprocessing_change_sampling_frequency.py)
+
+`python main_data_preprocessing_change_sampling_frequency.py`
+
+Click [time-series-Preprocessing-Change-Sampling-Frequency.txt](../docs/output/time-series-Preprocessing-Change-Sampling-Frequency.txt) to see the output of above command.

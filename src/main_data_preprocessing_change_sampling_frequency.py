@@ -19,7 +19,7 @@ import conf
 # Setting Quandl's API KEY (Use your own API KEY)
 quandl.ApiConfig.api_key = conf.API_KEY
 
-# Requesting 5 rows
-# Quandl code: WIKI/AAPL
-data = quandl.get("WIKI/AAPL", rows=5)
+# Preprocessing data, Changing sampling frequency
+# Quandl code: EIA/PET_RWTC_D
+data = quandl.get("EIA/PET_RWTC_D", collapse="monthly")
 print data; 
