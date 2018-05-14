@@ -200,3 +200,26 @@ print data;
 `python main_data_preprocessing_change_sampling_frequency.py`
 
 Click [time-series-Preprocessing-Change-Sampling-Frequency.txt](../docs/output/time-series-Preprocessing-Change-Sampling-Frequency.txt) to see the output of above command.
+
+## Perform elementary calculations
+
+`main_data_preprocessing_perform_elementary_calculations.py`
+```python
+import quandl 
+import conf
+
+# Setting Quandl's API KEY (Use your own API KEY)
+quandl.ApiConfig.api_key = conf.API_KEY
+
+# Preprocessing data
+# Perform elementary calculations on data
+# Quandl code: FRED/GDP
+data = quandl.get("FRED/GDP", transformation="rdiff")
+print data; 
+```
+
+## Run code (main_data_preprocessing_perform_elementary_calculations.py)
+
+`python main_data_preprocessing_perform_elementary_calculations.py`
+
+Click [time-series-Preprocessing-Perform-Elementary-Calculation.txt](../docs/output/time-series-Preprocessing-Perform-Elementary-Calculation.txt) to see the output of above command.

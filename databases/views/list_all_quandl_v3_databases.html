@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="quandlApp" ng-controller="quandlCtrl"> 
+
+<!-- <ul>
+  <li ng-repeat="x in myData">
+    {{ x.Name + ', ' + x.Country }}
+  </li>
+</ul> -->
+
+</div>
+
+<script>
+var app = angular.module('quandlApp', []);
+app.controller('quandlCtrl', function($scope, $http) {
+  $http.get("https://www.quandl.com/api/v3/databases", 
+  // {
+  // 	headers: {
+  // 		"Accept": "application/json; charset: utf-8",
+  // 		"Content-Type": "application/json",
+  // 	}
+  // }
+  ).then(function (response) {
+      $scope.quandlDatabases = response.data;
+      console.log(typeof $scope.quandlDatabases)
+  });
+});
+</script>
+
+</body>
+</html>
