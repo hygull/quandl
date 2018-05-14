@@ -19,8 +19,7 @@ import conf
 # Setting Quandl's API KEY (Use your own API KEY)
 quandl.ApiConfig.api_key = conf.API_KEY
 
-# WTI Crude Oil Price (https://www.quandl.com/EIA/PET_RWTC_D)
-# Quandl code: EIA/PET_RWTC_D
-# From: US Department of Energy (https://www.quandl.com/EIA)
-data = quandl.get("EIA/PET_RWTC_D");
-print data;
+# Quandl code: FRED/GDP
+data = quandl.get("FRED/GDP", start_date="2001-12-31", \
+	end_date="2005-12-31");
+print data; 

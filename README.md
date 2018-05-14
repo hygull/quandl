@@ -4,7 +4,7 @@ A project containing the source code and many more usage examples related to Pyt
 
 > Get millions of financial and economic datasets from hundreds of publishers directly into Python.
 
-# Python version
+## Python version
 
 Python 2.7.14 :: Anaconda custom (64-bit)
 
@@ -58,13 +58,13 @@ quandl.ApiConfig.api_key = conf.API_KEY
 
 `python main.py`
 
-# TIME-SERIES (Using time-series based APIs, Making a time-series call)
+## TIME-SERIES (Using time-series based APIs)
 
-> [WTI Crude Oil Price](https://www.quandl.com/EIA/PET_RWTC_D)
->
-> Quandl code &raquo; EIA/PET_RWTC_D
->
-> From &raquo; [US Department of Energy](https://www.quandl.com/EIA)
+[WTI Crude Oil Price](https://www.quandl.com/EIA/PET_RWTC_D)
+
+Quandl code &raquo; EIA/PET_RWTC_D
+
+From &raquo; [US Department of Energy](https://www.quandl.com/EIA)
 
 ```python
 """
@@ -88,9 +88,9 @@ import conf
 # Setting Quandl's API KEY (Use your own API KEY)
 quandl.ApiConfig.api_key = conf.API_KEY
 
-# [WTI Crude Oil Price](https://www.quandl.com/EIA/PET_RWTC_D)
+# WTI Crude Oil Price (https://www.quandl.com/EIA/PET_RWTC_D)
 # Quandl code: EIA/PET_RWTC_D
-# From: [US Department of Energy](https://www.quandl.com/EIA)
+# From: US Department of Energy (https://www.quandl.com/EIA)
 data = quandl.get("EIA/PET_RWTC_D");
 print data;
 ```
@@ -99,8 +99,48 @@ print data;
 
 `python main.py`
 
-Click [WTI Crude Oil Price - time series] to see the output of above command.
+Click [WTI Crude Oil Price - time series](./docs/output/time-series-WTI-Crude-Oil-Price.txt) to see the output of above command.
 
+## CHANGING FORMAT
+Getting the data obtained as Numpy array
+
+main_data_as_numpy_array.py
+```python
+"""
+	{
+		"date": "14 May 2018, Mon",
+		"aim": "To access QUANDL's APIs using Python's quandl package",
+		"links": [
+			"https://docs.quandl.com/docs/python",
+			"https://github.com/quandl/Matlab",
+			"https://docs.quandl.com/docs/python-time-series",
+		],
+		"pythonVersion": "Python 2.7.14 :: Anaconda custom (64-bit)",
+		"codedBy": "Rishikesh Agrawani"
+	}
+"""
+
+
+import quandl 
+import conf
+
+# Setting Quandl's API KEY (Use your own API KEY)
+quandl.ApiConfig.api_key = conf.API_KEY
+
+# WTI Crude Oil Price (https://www.quandl.com/EIA/PET_RWTC_D)
+# Quandl code: EIA/PET_RWTC_D
+# From: US Department of Energy (https://www.quandl.com/EIA)
+data = quandl.get("EIA/PET_RWTC_D", returns="numpy"); 
+print data; # data is Numpy array
+```
+
+## Run code (main.py)
+
+`python main_data_as_numpy_array.py`
+
+Click [WTI Crude Oil Price - time series](./docs/output/time-series-WTI-Crude-Oil-Price-As-Numpy-Array.txt) to see the output of above command.
+
+## Make a filtered time-series call
 
 
 

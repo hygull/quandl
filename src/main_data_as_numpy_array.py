@@ -22,5 +22,5 @@ quandl.ApiConfig.api_key = conf.API_KEY
 # WTI Crude Oil Price (https://www.quandl.com/EIA/PET_RWTC_D)
 # Quandl code: EIA/PET_RWTC_D
 # From: US Department of Energy (https://www.quandl.com/EIA)
-data = quandl.get("EIA/PET_RWTC_D");
-print data;
+data = quandl.get("EIA/PET_RWTC_D", returns="numpy"); 
+print data; # data is Numpy array
