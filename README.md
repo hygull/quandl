@@ -68,20 +68,6 @@ From &raquo; [US Department of Energy](https://www.quandl.com/EIA)
 
 ```python
 """
-	{
-		"date": "14 May 2018, Mon",
-		"aim": "To access QUANDL's APIs using Python's quandl package",
-		"links": [
-			"https://docs.quandl.com/docs/python",
-			"https://github.com/quandl/Matlab",
-			"https://docs.quandl.com/docs/python-time-series",
-		],
-		"pythonVersion": "Python 2.7.14 :: Anaconda custom (64-bit)",
-		"codedBy": "Rishikesh Agrawani"
-	}
-"""
-
-
 import quandl 
 import conf
 
@@ -99,7 +85,7 @@ print data;
 
 `python main.py`
 
-Click [WTI Crude Oil Price - time series](./docs/output/time-series-WTI-Crude-Oil-Price.txt) to see the output of above command.
+Click [WTI Crude Oil Price - time series](../docs/output/time-series-WTI-Crude-Oil-Price.txt) to see the output of above command.
 
 ## CHANGING FORMAT
 Getting the data obtained as Numpy array
@@ -107,20 +93,6 @@ Getting the data obtained as Numpy array
 main_data_as_numpy_array.py
 ```python
 """
-	{
-		"date": "14 May 2018, Mon",
-		"aim": "To access QUANDL's APIs using Python's quandl package",
-		"links": [
-			"https://docs.quandl.com/docs/python",
-			"https://github.com/quandl/Matlab",
-			"https://docs.quandl.com/docs/python-time-series",
-		],
-		"pythonVersion": "Python 2.7.14 :: Anaconda custom (64-bit)",
-		"codedBy": "Rishikesh Agrawani"
-	}
-"""
-
-
 import quandl 
 import conf
 
@@ -138,26 +110,11 @@ print data; # data is Numpy array
 
 `python main_data_as_numpy_array.py`
 
-Click [WTI Crude Oil Price - time series](./docs/output/time-series-WTI-Crude-Oil-Price-As-Numpy-Array.txt) to see the output of above command.
+Click [WTI Crude Oil Price - time series](../docs/output/time-series-WTI-Crude-Oil-Price-As-Numpy-Array.txt) to see the output of above command.
 
 ## Make a filtered time-series call
 
 ```python
-"""
-	{
-		"date": "14 May 2018, Mon",
-		"aim": "To access QUANDL's APIs using Python's quandl package",
-		"links": [
-			"https://docs.quandl.com/docs/python",
-			"https://github.com/quandl/Matlab",
-			"https://docs.quandl.com/docs/python-time-series",
-		],
-		"pythonVersion": "Python 2.7.14 :: Anaconda custom (64-bit)",
-		"codedBy": "Rishikesh Agrawani"
-	}
-"""
-
-
 import quandl 
 import conf
 
@@ -174,10 +131,27 @@ print data;
 
 `python main_data_filtered_set_start_and_end_dates.py`
 
-Click [WTI Crude Oil Price - time series](./docs/output/time-series-Filtered-Start-End-Dates.txt) to see the output of above command.
+Click [WTI Crude Oil Price - time series](../docs/output/time-series-Filtered-Start-End-Dates.txt) to see the output of above command.
 
+## Request specific columns
 
+```python
+"""
+import quandl 
+import conf
 
+# Setting Quandl's API KEY (Use your own API KEY)
+quandl.ApiConfig.api_key = conf.API_KEY
 
+# Requesting specific columns
+# Quandl codes: "NSE/OIL.1", "WIKI/AAPL.4"
+data = quandl.get(["NSE/OIL.1", "WIKI/AAPL.4"])
+print data; 
+```
 
+## Run code (main_data_filtered_request_specific_columns.py)
+
+`python main_data_filtered_request_specific_columns.py`
+
+Click [WTI Crude Oil Price - time series](../docs/output/time-series-Filtered-Request-Specific-Columns.txt) to see the output of above command.
 
