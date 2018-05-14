@@ -106,11 +106,11 @@ data = quandl.get("EIA/PET_RWTC_D", returns="numpy");
 print data; # data is Numpy array
 ```
 
-## Run code (main.py)
+## Run code (main_data_as_numpy_array.py)
 
 `python main_data_as_numpy_array.py`
 
-Click [WTI Crude Oil Price - time series](../docs/output/time-series-WTI-Crude-Oil-Price-As-Numpy-Array.txt) to see the output of above command.
+Click [time-series-WTI-Crude-Oil-Price-As-Numpy-Array.txt](../docs/output/time-series-WTI-Crude-Oil-Price-As-Numpy-Array.txt) to see the output of above command.
 
 ## Make a filtered time-series call
 
@@ -127,11 +127,11 @@ data = quandl.get("FRED/GDP", start_date="2001-12-31", \
 print data; 
 ```
 
-## Run code (main.py)
+## Run code (main_data_filtered_set_start_and_end_dates.py)
 
 `python main_data_filtered_set_start_and_end_dates.py`
 
-Click [WTI Crude Oil Price - time series](../docs/output/time-series-Filtered-Start-End-Dates.txt) to see the output of above command.
+Click [time-series-Filtered-Start-End-Dates.txt](../docs/output/time-series-Filtered-Start-End-Dates.txt) to see the output of above command.
 
 ## Request specific columns
 
@@ -153,5 +153,25 @@ print data;
 
 `python main_data_filtered_request_specific_columns.py`
 
-Click [WTI Crude Oil Price - time series](../docs/output/time-series-Filtered-Request-Specific-Columns.txt) to see the output of above command.
+Click [time-series-Filtered-Request-Specific-Columns.txt](../docs/output/time-series-Filtered-Request-Specific-Columns.txt) to see the output of above command.
 
+## Request 5 rows
+
+```python
+import quandl 
+import conf
+
+# Setting Quandl's API KEY (Use your own API KEY)
+quandl.ApiConfig.api_key = conf.API_KEY
+
+# Requesting 5 rows
+# Quandl codes: WIKI/AAPL
+data = quandl.get("WIKI/AAPL", rows=5)
+print data; 
+```
+
+## Run code (main_data_filtered_request_5_rows.py)
+
+`python main_data_filtered_request_5_rows.py`
+
+Click [time-series-Filtered-Request-5-Columns.txt](../docs/output/time-series-Filtered-Request-5-Columns.txt) to see the output of above command.
