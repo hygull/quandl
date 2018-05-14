@@ -30,7 +30,7 @@ conf.py
 API_KEY = '2eVS3E8J_lDUFKbnF6gW';
 ```
 
-main.py
+`main.py`
 ```python
 """
 	{
@@ -66,6 +66,7 @@ Quandl code &raquo; EIA/PET_RWTC_D
 
 From &raquo; [US Department of Energy](https://www.quandl.com/EIA)
 
+`main.py`
 ```python
 """
 import quandl 
@@ -90,7 +91,7 @@ Click [WTI Crude Oil Price - time series](../docs/output/time-series-WTI-Crude-O
 ## CHANGING FORMAT
 Getting the data obtained as Numpy array
 
-main_data_as_numpy_array.py
+`main_data_as_numpy_array.py`
 ```python
 """
 import quandl 
@@ -114,6 +115,7 @@ Click [time-series-WTI-Crude-Oil-Price-As-Numpy-Array.txt](../docs/output/time-s
 
 ## Make a filtered time-series call
 
+`main_data_filtered_set_start_and_end_dates.py`
 ```python
 import quandl 
 import conf
@@ -122,8 +124,7 @@ import conf
 quandl.ApiConfig.api_key = conf.API_KEY
 
 # Quandl code: FRED/GDP
-data = quandl.get("FRED/GDP", start_date="2001-12-31", \
-	end_date="2005-12-31");
+data = quandl.get("FRED/GDP", start_date="2001-12-31", end_date="2005-12-31");
 print data; 
 ```
 
@@ -135,6 +136,7 @@ Click [time-series-Filtered-Start-End-Dates.txt](../docs/output/time-series-Filt
 
 ## Request specific columns
 
+`main_data_filtered_request_specific_columns.py`
 ```python
 """
 import quandl 
@@ -157,6 +159,7 @@ Click [time-series-Filtered-Request-Specific-Columns.txt](../docs/output/time-se
 
 ## Request 5 rows
 
+`main_data_filtered_request_5_rows.py`
 ```python
 import quandl 
 import conf
@@ -178,6 +181,7 @@ Click [time-series-Filtered-Request-5-Columns.txt](../docs/output/time-series-Fi
 
 ## Preprocessing data: Changing sampling frequency
 
+`main_data_preprocessing_change_sampling_frequency.py`
 ```python
 import quandl 
 import conf

@@ -20,6 +20,5 @@ import conf
 quandl.ApiConfig.api_key = conf.API_KEY
 
 # Quandl code: FRED/GDP
-data = quandl.get("FRED/GDP", start_date="2001-12-31", \
-	end_date="2005-12-31");
+data = quandl.get("FRED/GDP", start_date="2001-12-31", end_date="2005-12-31");
 print data; 
