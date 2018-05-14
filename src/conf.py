@@ -1,0 +1,2 @@
+# API KEY for QUANDL
+API_KEY = '2eVS3E8J_lDUFKbnF6gW';
