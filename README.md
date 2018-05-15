@@ -86,7 +86,7 @@ print data;
 
 `python main.py`
 
-Click [WTI Crude Oil Price - time series](../docs/output/time-series-WTI-Crude-Oil-Price.txt) to see the output of above command.
+Click [WTI Crude Oil Price - time series](./docs/output/time-series-WTI-Crude-Oil-Price.txt) to see the output of above command.
 
 ## CHANGING FORMAT
 Getting the data obtained as Numpy array
@@ -111,7 +111,7 @@ print data; # data is Numpy array
 
 `python main_data_as_numpy_array.py`
 
-Click [time-series-WTI-Crude-Oil-Price-As-Numpy-Array.txt](../docs/output/time-series-WTI-Crude-Oil-Price-As-Numpy-Array.txt) to see the output of above command.
+Click [time-series-WTI-Crude-Oil-Price-As-Numpy-Array.txt](./docs/output/time-series-WTI-Crude-Oil-Price-As-Numpy-Array.txt) to see the output of above command.
 
 ## Make a filtered time-series call
 
@@ -132,7 +132,7 @@ print data;
 
 `python main_data_filtered_set_start_and_end_dates.py`
 
-Click [time-series-Filtered-Start-End-Dates.txt](../docs/output/time-series-Filtered-Start-End-Dates.txt) to see the output of above command.
+Click [time-series-Filtered-Start-End-Dates.txt](./docs/output/time-series-Filtered-Start-End-Dates.txt) to see the output of above command.
 
 ## Request specific columns
 
@@ -155,7 +155,7 @@ print data;
 
 `python main_data_filtered_request_specific_columns.py`
 
-Click [time-series-Filtered-Request-Specific-Columns.txt](../docs/output/time-series-Filtered-Request-Specific-Columns.txt) to see the output of above command.
+Click [time-series-Filtered-Request-Specific-Columns.txt](./docs/output/time-series-Filtered-Request-Specific-Columns.txt) to see the output of above command.
 
 ## Request 5 rows
 
@@ -177,7 +177,7 @@ print data;
 
 `python main_data_filtered_request_5_rows.py`
 
-Click [time-series-Filtered-Request-5-Columns.txt](../docs/output/time-series-Filtered-Request-5-Columns.txt) to see the output of above command.
+Click [time-series-Filtered-Request-5-Columns.txt](./docs/output/time-series-Filtered-Request-5-Columns.txt) to see the output of above command.
 
 ## Preprocessing data: Changing sampling frequency
 
@@ -199,7 +199,7 @@ print data;
 
 `python main_data_preprocessing_change_sampling_frequency.py`
 
-Click [time-series-Preprocessing-Change-Sampling-Frequency.txt](../docs/output/time-series-Preprocessing-Change-Sampling-Frequency.txt) to see the output of above command.
+Click [time-series-Preprocessing-Change-Sampling-Frequency.txt](./docs/output/time-series-Preprocessing-Change-Sampling-Frequency.txt) to see the output of above command.
 
 ## Perform elementary calculations
 
@@ -222,4 +222,4 @@ print data;
 
 `python main_data_preprocessing_perform_elementary_calculations.py`
 
-Click [time-series-Preprocessing-Perform-Elementary-Calculation.txt](../docs/output/time-series-Preprocessing-Perform-Elementary-Calculation.txt) to see the output of above command.
+Click [time-series-Preprocessing-Change-Sampling-Frequency.txt](./docs/output/time-series-Preprocessing-Perform-Elementary-Calculation.txt) to see the output of above command.
